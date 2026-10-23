@@ -1,8 +1,3 @@
-let contaInsufficiente: number = 0;
-let contaSufficiente: number = 0;
-let contaBuono: number = 0;
-let contaOttimo: number = 0;
-
 function registraVoto(): void {
     let nome: string = (document.getElementById("nome") as HTMLInputElement).value.trim();
     let votoTesto: string = (document.getElementById("voto") as HTMLInputElement).value.trim();
@@ -33,34 +28,30 @@ function registraVoto(): void {
     if (voto <= 5) {
         giudizio = "Insufficiente";
         classeCss = "insufficiente";
-        contaInsufficiente++;
     } else if (voto === 6) {
         giudizio = "Sufficiente";
         classeCss = "sufficiente";
-        contaSufficiente++;
     } else if (voto === 7 || voto === 8) {
         giudizio = "Buono";
         classeCss = "buono";
-        contaBuono++;
     } else {
         giudizio = "Ottimo";
         classeCss = "ottimo";
-        contaOttimo++;
     }
 
     let immagine: HTMLImageElement = document.getElementById("immagine") as HTMLImageElement;
     
     if (giudizio === "Insufficiente") {
-        immagine.src = "img/insufficiente.PNG";
+        immagine.src = "img/insufficiente.png";
         immagine.alt = "Semaforo rosso";
     } else if (giudizio === "Sufficiente") {
-        immagine.src = "img/sufficiente.PNG";
+        immagine.src = "img/sufficiente.png";
         immagine.alt = "Semaforo giallo";
     } else if (giudizio === "Buono") {
-        immagine.src = "img/buono.PNG";
+        immagine.src = "img/buono.png";
         immagine.alt = "Semaforo verde";
     } else {
-        immagine.src = "img/ottimo.PNG";
+        immagine.src = "img/ottimo.png";
         immagine.alt = "Stella";
     }
 
@@ -69,9 +60,4 @@ function registraVoto(): void {
     nuovoLi.textContent = nome + " - " + voto + " (" + giudizio + ")";
     nuovoLi.classList.add(classeCss);
     elenco.appendChild(nuovoLi);
-
-    (document.getElementById("conta-insufficiente") as HTMLElement).textContent = String(contaInsufficiente);
-    (document.getElementById("conta-sufficiente") as HTMLElement).textContent = String(contaSufficiente);
-    (document.getElementById("conta-buono") as HTMLElement).textContent = String(contaBuono);
-    (document.getElementById("conta-ottimo") as HTMLElement).textContent = String(contaOttimo);
 }
