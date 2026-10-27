@@ -45,19 +45,19 @@ function registra() {
     let immagine = document.getElementById("immagine");
     switch (genere) {
         case "Avventura":
-            immagine.src = "img/avventura.svg";
+            immagine.src = "img/avventura.png";
             immagine.alt = "Avventura";
             break;
         case "Giallo":
-            immagine.src = "img/giallo.svg";
+            immagine.src = "img/giallo.png";
             immagine.alt = "Lente d'ingrandimento";
             break;
         case "Fantasy":
-            immagine.src = "img/fantasy.svg";
+            immagine.src = "img/fantasy.png";
             immagine.alt = "Fantasy";
             break;
         case "Storico":
-            immagine.src = "img/storico.svg";
+            immagine.src = "img/storico.png";
             immagine.alt = "Storico";
             break;
     }
