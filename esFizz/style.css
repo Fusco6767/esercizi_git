@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 30px;
+}
+
+.controlli {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 6px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.errore {
+    color: red;
+    font-weight: bold;
+    height: 20px; 
+}
+
+#contenitore-caselle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.casella {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 8px;
+    color: #000;
+}
+
+.verde {
+    background-color: #90ee90; 
+}
+
+.arancione {
+    background-color: #ffb347; 
+}
+
+.azzurra {
+    background-color: #87ceeb; 
+}
+
+.grigia {
+    background-color: #d3d3d3;
+}
+
+#riepilogo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
