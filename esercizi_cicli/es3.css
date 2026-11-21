@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 30px;
+}
+
+.box-input {
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 5px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.testo-errore {
+    color: red;
+    font-weight: bold;
+    height: 20px;
+}
+
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #004d40;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #004d40;
+    background-color: #ffffff;
+}

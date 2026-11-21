@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 30px;
+}
+
+.box-input {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 6px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.testo-errore {
+    color: red;
+    font-weight: bold;
+    height: 20px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+td {
+    border: 1px solid #333;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.testo-totale {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+    margin-top: 20px;
+}

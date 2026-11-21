@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Cifrario di Cesare</title>
+    <link rel="stylesheet" href="es4.css">
+</head>
+<body>
+
+    <h1>Organizzazione Segreta</h1>
+    <h2>Cifrario di Cesare</h2>
+
+    <div class="box">
+        <label for="messaggio">Messaggio segreto:</label>
+        <input type="text" id="messaggio">
+        <br><br>
+
+        <label for="spostamento">Spostamento (numero):</label>
+        <input type="number" id="spostamento">
+        <br><br>
+
+        <label>Azione:</label>
+        <input type="radio" name="azione" value="cifra" id="cifra" checked> 
+        <label for="cifra">Cifra</label>
+        <input type="radio" name="azione" value="decifra" id="decifra"> 
+        <label for="decifra">Decifra</label>
+        <br><br>
+
+        <button type="button" onclick="eseguiOperazione()">Esegui</button>
+    </div>
+
+    <p id="errore" class="avviso"></p>
+    
+    <div id="risultato" class="risultato"></div>
+
+    <script src="dist/es4.js" defer></script>
+</body>
+</html>

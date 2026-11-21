@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Regno delle Stelle</title>
+    <script src="dist/es2.js" defer></script>
+    <link rel="stylesheet" href="es2.css">
+</head>
+<body>
+
+    <h1>Architetti del Regno delle Stelle</h1>
+
+    <div class="controlli">
+        <label for="n">Scegli il numero magico N:</label>
+        <input type="number" id="n" min="1">
+
+        <label for="figura">Scegli la figura:</label>
+        <select id="figura">
+            <option value="quadrato">a. Stella del Quadrato Pieno</option>
+            <option value="contorno">b. Contorno del Quadrato</option>
+            <option value="triangolo">c. Triangolo del Coraggio</option>
+            <option value="labirinto">d. Stella del Labirinto</option>
+        </select>
+
+        <button onclick="disegna()">Disegna</button>
+    </div>
+
+    <p id="messaggio" class="errore"></p>
+
+    <pre id="output"></pre>
+
+</body>
+</html>

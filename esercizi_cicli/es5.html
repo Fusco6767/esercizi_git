@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Difesa Planetaria</title>
+    <link rel="stylesheet" href="es5.css">
+</head>
+<body>
+
+    <h1>Sistema di Difesa Planetaria</h1>
+
+    <div class="pannello">
+        <label for="dimensione">Dimensione griglia (2-10):</label>
+        <input type="number" id="dimensione" min="2" max="10">
+        <button type="button" onclick="avviaBattaglia()">Avvia Sistema</button>
+        <button type="button" onclick="ricomincia()">Ricomincia</button>
+    </div>
+
+    <p id="log" class="messaggio">In attesa di coordinate...</p>
+    <p id="tentativi" class="contatore">Tentativi: 0</p>
+
+    <div id="griglia" class="griglia-satelliti"></div>
+
+    <script src="dist/es5.js" defer></script>
+</body>
+</html>

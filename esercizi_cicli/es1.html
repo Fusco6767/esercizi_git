@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Scacchiera Magica</title>
+    <link rel="stylesheet" href="es1.css">
+</head>
+<body>
+
+    <h1>La Scacchiera Magica</h1>
+
+    <div class="box-input">
+        <label for="valoreN">Inserisci la dimensione N (1-10):</label>
+        <input type="number" id="valoreN" min="1" max="10">
+        <button type="button" onclick="generaQuadratoMagico()">Genera</button>
+    </div>
+
+    <p id="erroreScacchiera" class="testo-errore"></p>
+
+    <table id="tabellaMagica">
+        <tbody id="corpoTabella"></tbody>
+    </table>
+
+    <p id="totaleMagico" class="testo-totale"></p>
+
+    <script src="dist/es1.js" defer></script>
+</body>
+</html>

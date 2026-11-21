@@ -1,0 +1,85 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0b0c10;
+    color: #66fcf1;
+    text-align: center;
+    margin: 30px;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #66fcf1;
+    margin-bottom: 30px;
+}
+
+.pannello {
+    background-color: #1f2833;
+    padding: 20px;
+    border: 2px solid #45a29e;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+    background-color: #0b0c10;
+    color: #66fcf1;
+    border: 1px solid #45a29e;
+}
+
+button {
+    padding: 6px 12px;
+    background-color: #45a29e;
+    color: #0b0c10;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #66fcf1;
+}
+
+.messaggio {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 24px;
+    color: #f1c40f;
+}
+
+.contatore {
+    font-size: 18px;
+}
+
+.griglia-satelliti {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cella {
+    width: 50px;
+    height: 50px;
+    background-color: #1f2833;
+    border: 1px solid #45a29e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    color: #45a29e;
+}
+
+.cella:hover {
+    background-color: #45a29e;
+    color: #0b0c10;
+}
+
+.asteroide-trovato {
+    background-color: #e74c3c !important;
+    color: white;
+    box-shadow: 0 0 20px #e74c3c;
+}

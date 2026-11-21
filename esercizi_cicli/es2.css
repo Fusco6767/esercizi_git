@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    margin: 30px;
+}
+
+.controlli {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 5px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.errore {
+    color: #ff6b6b;
+    font-weight: bold;
+    height: 20px;
+}
+
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #00ffcc;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #00ffcc;
+    background-color: #16213e;
+}
